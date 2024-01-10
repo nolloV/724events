@@ -36,7 +36,10 @@
         width: 16px;
         height: 16px;
         min-width: 0;
-        color: $primary;
+        // color: $primary;
+        &.active {
+          background-color: $primary;
+        }
       }
     }
     &__description {
