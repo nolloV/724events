@@ -23,7 +23,7 @@ describe("When a event card is created", () => {
         imageAlt="image-alt-text"
         title="test event"
         label="test label"
-        date={new Date("2022-04-01")}
+        date={new Date("2022-04-29T20:28:45.744Z")}
       />
     );
     const titleElement = screen.getByText(/test event/);
