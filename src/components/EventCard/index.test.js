@@ -23,7 +23,8 @@ describe("When a event card is created", () => {
         imageAlt="image-alt-text"
         title="test event"
         label="test label"
-        date={new Date("2022-04-29T20:28:45.744Z")}
+        // Mon créneau horaire est au format Nord Americain UTC+1
+        date={new Date("2022-04-01T20:28:45")}
       />
     );
     const titleElement = screen.getByText(/test event/);
