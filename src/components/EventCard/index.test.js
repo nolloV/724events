@@ -23,7 +23,8 @@ describe("When a event card is created", () => {
         imageAlt="image-alt-text"
         title="test event"
         label="test label"
-        // Mon créneau horaire est au format Nord Americain UTC+1
+        // Mon créneau horaire est au format Nord Americain UTC-4 (EDT)
+        // J'ai du ajouter l'heure sinon le test croit qu'on est le jour précédent
         date={new Date("2022-04-01T20:28:45")}
       />
     );
